@@ -1,0 +1,38 @@
+# ☁️ Azure IT Support Portfolio
+
+## 👋 About Me
+I am an aspiring IT Support / Cloud Support professional with hands-on experience deploying, managing, and troubleshooting Linux virtual machines on Microsoft Azure.
+
+This portfolio showcases real-world Azure projects demonstrating my ability to support cloud infrastructure, resolve deployment issues, and manage virtual machines using both the Azure Portal and Azure CLI.
+
+---
+
+## 🔧 Skills
+- Microsoft Azure Virtual Machines
+- Linux (Ubuntu) Administration
+- Azure CLI
+- ARM Templates (IaC)
+- Troubleshooting & IT Support
+- Authentication & Access Management
+
+---
+
+## 📂 Projects
+
+### 🔹 Project 1: Azure Virtual Machine Deployment & Troubleshooting
+**Role:** IT Support / Cloud Support  
+**Technologies:** Azure Portal, Azure CLI, Ubuntu 22.04 LTS, ARM Templates  
+
+👉 [View Project](./Project-1-Azure-VM)
+
+**What I Did:**
+- Deployed Linux VMs using Azure Portal and ARM templates
+- Configured SSH and password authentication
+- Troubleshot OS disk, OSProfile, and SSH access issues
+- Managed VM lifecycle using Azure CLI
+
+---
+
+## 🔗 Contact
+**Name:** Racheal Olaitan  
+**LinkedIn:** https://www.linkedin.com/in/your-link
