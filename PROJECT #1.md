@@ -112,3 +112,6 @@ Checked VM runtime states:
 * ARM Template Troubleshooting
 * Cloud Infrastructure Support
 * IT Support & Problem Solving
+
+##  🎥Video Demonstration of how i successfully deployed a Linux VM🔗:
+## ARM Template (JSON file): 
