@@ -40,4 +40,4 @@ This portfolio showcases real-world Azure projects demonstrating my ability to s
 
 **LinkedIn:** https://www.linkedin.com/in/abeeb-olabode-916104393
 
-**Email:** Abeeb.olabode10@gmail.con
+**Email:** Abeeb.olabode10@gmail.com
