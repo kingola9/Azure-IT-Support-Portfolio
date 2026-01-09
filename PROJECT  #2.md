@@ -239,7 +239,7 @@ _Exported template and downloaded it._
 
 🎉 The template can now be reused to redeploy infrastructure when needed.
 
-
+## ARM Template : https://github.com/kingola9/Azure-IT-Support-Portfolio/blob/74e209659ab28850caac58a080c3eb5442ce1dd1/template-1.json
 
 ---
 
