@@ -82,7 +82,7 @@ _VM overview (running)_
 ![Screenshot_20260106-172617~3](https://github.com/user-attachments/assets/d1f7a003-7d10-47f2-b9ca-0ec89f773c96)
 _Captured custom image (overview)_
 
-<img width="auto" height="auto" alt="Screenshot (95)" src="https://github.com/user-attachments/assets/1394e38e-8391-4077-9c9a-6f6b5ea14e1d" />
+![Screenshot (95)~2](https://github.com/user-attachments/assets/fd680136-4c13-4668-91c3-ca6252b97cd8)
 _Azure resource flow showing VM ➡️ Image ➡️ Vnet_
 
 
