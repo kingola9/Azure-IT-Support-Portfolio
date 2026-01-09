@@ -1,0 +1,47 @@
+{
+    "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentTemplate.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+        "images_my_VM_Ubuntu_Custom_image_20260101053248_name": {
+            "defaultValue": "my-VM-Ubuntu-Custom-image-20260101053248",
+            "type": "String"
+        },
+        "virtualMachines_my_VM_externalid": {
+            "defaultValue": "/subscriptions/be999c17-8b9e-4e5f-ad9e-2547268c05fa/resourceGroups/IntroAzureRG/providers/Microsoft.Compute/virtualMachines/my-VM",
+            "type": "String"
+        },
+        "disks_my_VM_OsDisk_1_c6a9b44ee6fe49f7a5a3fbe4d2a08768_externalid": {
+            "defaultValue": "/subscriptions/be999c17-8b9e-4e5f-ad9e-2547268c05fa/resourceGroups/INTROAZURERG/providers/Microsoft.Compute/disks/my-VM_OsDisk_1_c6a9b44ee6fe49f7a5a3fbe4d2a08768",
+            "type": "String"
+        }
+    },
+    "variables": {},
+    "resources": [
+        {
+            "type": "Microsoft.Compute/images",
+            "apiVersion": "2024-11-01",
+            "name": "[parameters('images_my_VM_Ubuntu_Custom_image_20260101053248_name')]",
+            "location": "francecentral",
+            "properties": {
+                "sourceVirtualMachine": {
+                    "id": "[parameters('virtualMachines_my_VM_externalid')]"
+                },
+                "storageProfile": {
+                    "osDisk": {
+                        "osType": "Linux",
+                        "osState": "Generalized",
+                        "diskSizeGB": 30,
+                        "managedDisk": {
+                            "id": "[parameters('disks_my_VM_OsDisk_1_c6a9b44ee6fe49f7a5a3fbe4d2a08768_externalid')]"
+                        },
+                        "caching": "ReadWrite",
+                        "storageAccountType": "StandardSSD_LRS"
+                    },
+                    "dataDisks": [],
+                    "zoneResilient": false
+                },
+                "hyperVGeneration": "V2"
+            }
+        }
+    ]
+}
