@@ -23,7 +23,7 @@ _IT Support/Cloud Support_
 
 💡**Authentication: SSH Keys, Username & Password**
 
-## 🔧 Hands-on Tasks Performed
+## 🔧 Hands-on Tasks Performed (What I Did)
 
 1️⃣ **Virtual Machine Deployment**
 
