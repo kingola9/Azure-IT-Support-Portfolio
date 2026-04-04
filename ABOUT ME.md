@@ -26,7 +26,7 @@ This portfolio showcases real-world Azure projects demonstrating my ability to s
 
 #### 🔹 [Project 1: Azure Virtual Machine Deployment & Troubleshooting](https://github.com/kingola9/Azure-IT-Support-Portfolio/blob/cc7e10fd28692b6131b63b2a27ea74b8d66ad405/PROJECT%20%231.md)
 
-#### 🔹 [Project 2: Creation of Custom Image through Generalization of VM and Exporting of Template](https://github.com/kingola9/Azure-IT-Support-Portfolio/blob/ecc3ce4b4f901bfe8b4998cd18efc97d3c34d210/PROJECT%20%20%232.md)
+#### 🔹 [Project 2: Creation of Custom Image through Generalization of VM and Exporting of Template](https://github.com/kingola9/Azure-IT-Support-Portfolio/blob/bbfa2c72e4c22fb2907691f202f0aff902505e1a/PROJECT%20%20%232.md)
 
 ---
 
