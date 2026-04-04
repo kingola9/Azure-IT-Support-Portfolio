@@ -1,5 +1,3 @@
-Welcome to the Azure-IT-Support-Portfolio wiki!
-
 # ☁️ Azure IT Support Portfolio
 
 ## 👋 About Me
@@ -21,17 +19,14 @@ This portfolio showcases real-world Azure projects demonstrating my ability to s
 
 ## 📂 Projects
 
-### 🔹 Project 1: Azure Virtual Machine Deployment & Troubleshooting
 **Role:** IT Support / Cloud Support  
 **Technologies:** Azure Portal, Azure CLI, Ubuntu 22.04 LTS, ARM Templates  
 
-👉 [View Project](./Project-1-Azure-VM)
+---
 
-**What I Did:**
-- Deployed Linux VMs using Azure Portal and ARM templates
-- Configured SSH and password authentication
-- Troubleshoot OS disk, OSProfile, and SSH access issues
-- Managed VM lifecycle using Azure CLI
+#### 🔹 [Project 1: Azure Virtual Machine Deployment & Troubleshooting](https://github.com/kingola9/Azure-IT-Support-Portfolio/blob/cc7e10fd28692b6131b63b2a27ea74b8d66ad405/PROJECT%20%231.md)
+
+#### 🔹 [Project 2](https://github.com/kingola9/Azure-IT-Support-Portfolio/blob/ecc3ce4b4f901bfe8b4998cd18efc97d3c34d210/PROJECT%20%20%232.md)
 
 ---
 
