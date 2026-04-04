@@ -1,6 +1,6 @@
-## PROJECT 2 : Creation of Custom Image through Generalization of VM and Exporting of Template
+### PROJECT 2 : Creation of Custom Image through Generalization of VM and Exporting of Template
 
-## 📌 Project Overview
+### 📌 Project Overview
 
 This project demonstrates hands-on experience creating a reusable Azure Custom Image by generalizing a Virtual Machine (VM) and exporting the deployment template for future redeployment.
 
@@ -9,57 +9,55 @@ The focus is on VM generalization, image creation, and template export only — 
 
 ---
 
-## 🧠 Skills Demonstrated
+### 🧠 Skills Demonstrated
 
-Microsoft Azure Virtual Machines
+- Microsoft Azure Virtual Machines
 
-VM Generalization (Linux & Windows)
+- VM Generalization (Linux & Windows)
 
-Azure Custom Images
+- Azure Custom Images
 
-Managed Disks
+- Managed Disks
 
-Resource Group Management
+- Resource Group Management
 
-Exporting ARM Templates
+- Exporting ARM Templates
 
-Azure Portal & Azure CLI
+- Azure Portal & Azure CLI
 
-Infrastructure Documentation
+- Infrastructure Documentation
+
+
+---
+
+### 🛠 Environment & Tools
+
+- Cloud Platform: Microsoft Azure
+
+- VM OS: Ubuntu Linux / Windows Server (generalizable)
+
+- Image Type: Managed Image
+
+- Deployment Method: Azure Portal & ARM-compatible image
+
+
+---
+
+### 🎯 Project Objective
+
+**💡Create and configure an Azure Virtual Machine**
+
+**💡Generalize the VM to remove machine-specific data**
+
+**💡Capture the VM as a Custom Image**
+
+**💡Export the VM deployment template for reuse**
 
 
 
 ---
 
-## 🛠 Environment & Tools
-
-Cloud Platform: Microsoft Azure
-
-VM OS: Ubuntu Linux / Windows Server (generalizable)
-
-Image Type: Managed Image
-
-Deployment Method: Azure Portal & ARM-compatible image
-
-
-
----
-
-## 🎯 Project Objective
-
-Create and configure an Azure Virtual Machine
-
-Generalize the VM to remove machine-specific data
-
-Capture the VM as a Custom Image
-
-Export the VM deployment template for reuse
-
-
-
----
-
-## 🧩 Architecture Flow
+### 🧩 Architecture Flow
 
 1. Create & configure Azure VM
 
@@ -88,9 +86,9 @@ _Azure resource flow showing VM ➡️ Image ➡️ Vnet_
 
 ---
 
-## 🚀 Step-by-Step Implementation
+### 🚀 Step-by-Step Implementation
 
-## Step 1: Create and Configure the VM
+### Step 1: Create and Configure the VM
 
 Create a Virtual Machine in Azure
 
@@ -119,7 +117,7 @@ _Connected successfully on Azure CLI (SSH)_
 
 ---
 
-## Step 2: Generalize the VM
+### Step 2: Generalize the VM
 
 🔹 For Linux VM (Ubuntu)
 
@@ -142,7 +140,7 @@ exit
 
 _Azure CLI (overview)_
 
-## Pro Tip: In the case where the terminal don't display the confirmation of the generalization of the VM, it's crucial to login again after exit to confirm.
+#### Pro Tip: In the case where the terminal don't display the confirmation of the generalization of the VM, it's crucial to login again after exit to confirm.
 After entering your username and password or SSH key to login again and the terminal display:
  _permission denied, try again later._
 This error simply it indicates that your VM has been generalized just as below:
@@ -154,7 +152,7 @@ _The error message above simply indicates that our VM has been generalized for c
 
 ---
 
-## Step 3: Stop (Deallocate) the VM
+### Step 3: Stop (Deallocate) the VM
 
 From Azure Portal:
 
@@ -173,7 +171,7 @@ _VM status showing Stopped (Deallocated) in Azure Portal_
 
 ---
 
-## Step 4: Create the Custom Image
+### Step 4: Create the Custom Image
 
 1. Go to the VM → Capture
 
@@ -189,7 +187,7 @@ Image name
 
 ![Screenshot (160)~2](https://github.com/user-attachments/assets/1ab43416-e248-4509-994e-102495500119)
 
-_Click on Capture at the VM overview page at the top to crear your image_
+_Click on Capture at the VM overview page at the top to create your image_
 
 
 <img width="auto" height="auto" alt="Screenshot (85)" src="https://github.com/user-attachments/assets/cb96b71a-e379-422d-93b3-4df59ac7bada" />
@@ -218,7 +216,7 @@ Resource group (recommended: separate group for Custom Images)
 
 ---
 
-## Step 5: Export the Deployment Template
+### Step 5: Export the Deployment Template
 
 1. Navigate to the Resource Group containing the VM or Image
 
@@ -239,11 +237,11 @@ _Exported template and downloaded it._
 
 🎉 The template can now be reused to redeploy infrastructure when needed.
 
-## ARM Template : https://github.com/kingola9/Azure-IT-Support-Portfolio/blob/74e209659ab28850caac58a080c3eb5442ce1dd1/template-1.json
+#### ARM Template : https://github.com/kingola9/Azure-IT-Support-Portfolio/blob/74e209659ab28850caac58a080c3eb5442ce1dd1/template-1.json
 
 ---
 
-## 🧪 Validation & Validation
+### 🧪 Validation & Validation
 
 Confirm custom image is successfully created
 
@@ -264,15 +262,15 @@ Exported template files on local machine
 
 ---
 
-## ❗ Common Issues & Fixes
+#### ❗ Common Issues & Fixes
 
-## OS Profile Error
+#### OS Profile Error
 
-### Cause: 
+#### Cause: 
 
 VM was not generalized before capture
 
-### Fix:
+#### Fix:
 
 Recreate VM
 
@@ -284,13 +282,13 @@ Capture again
 
 ---
 
-## OS Disk / Managed Disk Error
+#### OS Disk / Managed Disk Error
 
-### Cause: 
+#### Cause: 
 
 Disk was referenced incorrectly or deleted
 
-### Fix:
+#### Fix:
 
 Ensure disk exists
 
@@ -302,7 +300,7 @@ Avoid deleting image resource group
 
 ---
 
-## 🔐 Best Practices Learned
+### 🔐 Best Practices Learned
 
 Always generalize before capturing
 
@@ -336,7 +334,7 @@ New VM deployed from image
 
 ---
 
-## 💼 Portfolio Value
+### 💼 Portfolio Value
 
 This project demonstrates:
 
@@ -349,7 +347,7 @@ Template-based infrastructure portability
 Preparation for disaster recovery and redeployment
 
 
-## Ideal for showcasing:
+### Ideal for showcasing:
 
 IT Support Engineer
 
@@ -361,7 +359,7 @@ Junior Cloud Engineer roles
 
 ---
 
-## 🔗 How to Use This Project
+### 🔗 How to Use This Project
 
 Fork or clone this repository
 
@@ -373,7 +371,7 @@ Modify the VM configuration to suit your needs
 
 ---
 
-## 📬 Author
+### 📬 Author
 
 ### Abeeb Olabode 
 
