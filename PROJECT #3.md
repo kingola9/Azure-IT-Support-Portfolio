@@ -108,7 +108,7 @@ _**Generated the primary endpoint to access web**_
 * Navigated to the `$web` container
 * Uploaded:
 
-  * `index.html`
+  * [`index.html`](https://github.com/kingola9/Azure-IT-Support-Portfolio/blob/049512bf90af84ca3e2cb2cecf9e155c245424b5/PROJECT%20%233%20folder/index.html)
   * `404.html`
 
 
