@@ -141,7 +141,7 @@ _**Uploaded the two website files**_
 
 <img width="auto" height="auto" alt="Screenshot (223)" src="https://github.com/user-attachments/assets/cfcfc645-4cb8-4641-a981-d7c1bcb43595" />
 
-_**Navigated back to the static website page to copy the primary endpoint URL to access the website**_
+_**Navigated back to the static website page to copy the [primary endpoint URL](https://olastorageaccount10.z28.web.core.windows.net/) to access the website**_
 
 ---
 
@@ -160,12 +160,26 @@ _**Verified the 404 Error page webite was publicly accessible**_
 
 ### 5. Update Website Content
 
-* Edited the [`index.html`] file locally
+* Edited the [`index.html`](https://github.com/kingola9/Azure-IT-Support-Portfolio/blob/7337f952610664c4c1fa79908eb984986fca0f31/PROJECT%20%233%20folder/updated.html) file locally
 * Re-uploaded the updated version
 * Refreshed the browser to confirm live changes
 
 
+<img width="auto" height="auto" alt="Screenshot (316)" src="https://github.com/user-attachments/assets/21bddce3-07a9-45f1-97d2-49f6b941fb41" />
 
+_**Edited the  [`index.html`](https://github.com/kingola9/Azure-IT-Support-Portfolio/blob/7337f952610664c4c1fa79908eb984986fca0f31/PROJECT%20%233%20folder/updated.html) file locally and re-uploaded the updated version to rewrite the previous version 1**_
+
+---
+
+<img width="auto" height="auto" alt="Screenshot (318)" src="https://github.com/user-attachments/assets/6fa987a2-94c8-4739-8277-30153d54e3a5" />
+
+_**Successfully re-uploaded and overwritten the previous version**_ 
+
+---
+
+<img width="auto" height="auto" alt="Screenshot (235)" src="https://github.com/user-attachments/assets/58b9f91b-ed06-47bb-bd52-5d3c856a8430" />
+
+_**Refreshed the browser to confirm the live changes**_
 
 ---
 
@@ -173,6 +187,11 @@ _**Verified the 404 Error page webite was publicly accessible**_
 
 * Deleted the Storage Account
 * Ensured no ongoing Azure charges
+
+<img width="auto" height="auto" alt="Screenshot (248)" src="https://github.com/user-attachments/assets/8a829ee0-2e01-426a-a657-90972d46922f" />
+
+_**Successfully deleted the resource group that contains the storage account to avoid ongoing Azure charges**_
+
 
 ---
 
@@ -184,11 +203,6 @@ _**Verified the 404 Error page webite was publicly accessible**_
 
 ---
 
-## 📸 Sample Output
-
-*(Add screenshots here of your Azure portal and hosted website)*
-
----
 
 ## 💡 Key Learnings
 
