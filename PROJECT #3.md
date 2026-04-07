@@ -80,7 +80,7 @@ _**Storage account overview**_
 * Enabled **Static Website** feature
 * Configured:
 
-  * Index document: [`index.html`](https://github.com/kingola9/Azure-IT-Support-Portfolio/blob/049512bf90af84ca3e2cb2cecf9e155c245424b5/PROJECT%20%233%20folder/index.html)
+  * Index document: [`index.html`](https://github.com/kingola9/Azure-IT-Support-Portfolio/blob/45a4b0b04b369cd3206d153952c19a320ff20a05/PROJECT%20%233%20folder/index.html)
   * Error document: [`404.html`](https://github.com/kingola9/Azure-IT-Support-Portfolio/blob/c5721a4e3655fea00db9a9040285201c109b21b6/PROJECT%20%233%20folder/404.html)
 
 
@@ -109,7 +109,7 @@ _**Generated the primary endpoint to access web**_
 * Navigated to the `$web` container
 * Uploaded:
 
-  * [`index.html`](https://github.com/kingola9/Azure-IT-Support-Portfolio/blob/049512bf90af84ca3e2cb2cecf9e155c245424b5/PROJECT%20%233%20folder/index.html)
+  * [`index.html`](https://github.com/kingola9/Azure-IT-Support-Portfolio/blob/45a4b0b04b369cd3206d153952c19a320ff20a05/PROJECT%20%233%20folder/index.html)
   * [`404.html`](https://github.com/kingola9/Azure-IT-Support-Portfolio/blob/c5721a4e3655fea00db9a9040285201c109b21b6/PROJECT%20%233%20folder/404.html)
 
 
