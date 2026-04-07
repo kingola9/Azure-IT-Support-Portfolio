@@ -80,8 +80,9 @@ _**Storage account overview**_
 * Enabled **Static Website** feature
 * Configured:
 
-  * Index document: `index.html`
-  * Error document: `404.html`
+  * Index document: [`index.html`](https://github.com/kingola9/Azure-IT-Support-Portfolio/blob/049512bf90af84ca3e2cb2cecf9e155c245424b5/PROJECT%20%233%20folder/index.html)
+  * Error document: [`404.html`](https://github.com/kingola9/Azure-IT-Support-Portfolio/blob/c5721a4e3655fea00db9a9040285201c109b21b6/PROJECT%20%233%20folder/404.html)
+
 
 <img width="auto" height="auto" alt="Screenshot (218)" src="https://github.com/user-attachments/assets/e71df010-9e34-413d-bd2e-fd728600201c" />
 
@@ -109,7 +110,7 @@ _**Generated the primary endpoint to access web**_
 * Uploaded:
 
   * [`index.html`](https://github.com/kingola9/Azure-IT-Support-Portfolio/blob/049512bf90af84ca3e2cb2cecf9e155c245424b5/PROJECT%20%233%20folder/index.html)
-  * `404.html`
+  * [`404.html`](https://github.com/kingola9/Azure-IT-Support-Portfolio/blob/c5721a4e3655fea00db9a9040285201c109b21b6/PROJECT%20%233%20folder/404.html)
 
 
 
@@ -137,13 +138,34 @@ _**Uploaded the two website files**_
 * Used the provided **primary endpoint URL**
 * Verified the site was publicly accessible
 
+
+<img width="auto" height="auto" alt="Screenshot (223)" src="https://github.com/user-attachments/assets/cfcfc645-4cb8-4641-a981-d7c1bcb43595" />
+
+_**Navigated back to the static website page to copy the primary endpoint URL to access the website**_
+
+---
+
+<img width="auto" height="auto" alt="Screenshot (234)" src="https://github.com/user-attachments/assets/583c7fb6-ac68-4ff1-8a67-f0a84407bf27" />
+
+_**Verified the landing page webite was publicly accessible**_
+
+---
+
+
+<img width="auto" height="auto" alt="Screenshot (233)" src="https://github.com/user-attachments/assets/a7d0df4c-c48b-4702-aab9-8e9f4e9cc5ef" />
+
+_**Verified the 404 Error page webite was publicly accessible**_
+
 ---
 
 ### 5. Update Website Content
 
-* Edited the `index.html` file locally
+* Edited the [`index.html`] file locally
 * Re-uploaded the updated version
 * Refreshed the browser to confirm live changes
+
+
+
 
 ---
 
