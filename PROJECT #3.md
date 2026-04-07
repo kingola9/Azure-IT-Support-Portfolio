@@ -43,6 +43,35 @@ By completing this project, I was able to:
   * Locally-redundant storage (LRS)
   * General-purpose v2
 
+    
+<img width="1365" height="721" alt="Screenshot (212)" src="https://github.com/user-attachments/assets/3ea87015-5114-4d49-b96a-21b9c7629c03" />
+
+_**Creation of storage acccount setup**_
+
+---
+
+<img width="1365" height="727" alt="Screenshot (213)" src="https://github.com/user-attachments/assets/6e17b48b-44a3-4262-94e9-f83cd30048e0" />
+
+_**Setup review & Creation**_
+
+---
+
+
+<img width="1361" height="725" alt="Screenshot (215)" src="https://github.com/user-attachments/assets/34c67cde-d450-4e9d-8d83-42959f36da48" />
+
+_**Storage account successfully deployed**_
+
+---
+
+<img width="1363" height="729" alt="Screenshot (217)" src="https://github.com/user-attachments/assets/8e49ca9f-8f5a-45b6-ab1e-b5cf32595a2a" />
+
+_**Storage account overview**_
+
+
+
+
+
+
 ---
 
 ### 2. Enable Static Website Hosting
@@ -54,6 +83,24 @@ By completing this project, I was able to:
   * Index document: `index.html`
   * Error document: `404.html`
 
+<img width="1365" height="723" alt="Screenshot (218)" src="https://github.com/user-attachments/assets/e71df010-9e34-413d-bd2e-fd728600201c" />
+
+_**Enabled static website from the storage account left menu**_
+
+---
+
+
+<img width="1365" height="723" alt="Screenshot (219)" src="https://github.com/user-attachments/assets/3bcf23a6-6b6f-4684-a0f7-f74f7d4781e9" />
+
+_**Entered the document file name `index.html` & `404.html`**_
+
+---
+
+<img width="1365" height="725" alt="Screenshot (220)" src="https://github.com/user-attachments/assets/96b1df3f-2dfc-46a1-a74d-8771ce9f281d" />
+
+_**Generated the primary endpoint to access web**_
+
+
 ---
 
 ### 3. Upload Website Content
@@ -62,7 +109,26 @@ By completing this project, I was able to:
 * Uploaded:
 
   * `index.html`
-  * Supporting files (CSS/images if any)
+  * `404.html`
+
+
+
+<img width="1359" height="727" alt="Screenshot (224)" src="https://github.com/user-attachments/assets/d7875e32-87e0-46b8-88c2-1650fe32e637" />
+
+_**Navigated to the container page from the storage account menu**_
+
+---
+
+<img width="1365" height="725" alt="Screenshot (227)" src="https://github.com/user-attachments/assets/22cfeabf-eb83-419e-aebe-bfa8c9850b98" />
+
+_**Selected the `web` container to upload the website files**_
+
+---
+
+<img width="1363" height="729" alt="Screenshot (228)" src="https://github.com/user-attachments/assets/209bd312-28f0-4310-9493-573c93392b0e" />
+
+_**Uploaded the two website files**_
+
 
 ---
 
