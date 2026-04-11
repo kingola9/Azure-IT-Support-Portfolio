@@ -32,6 +32,15 @@ By completing this project, I was able to:
 
 ---
 
+## 🏗️ Architecture Overview
+
+Azure Blob Storage static website hosting allows files stored in the $web container to be served directly over HTTP via a public endpoint.
+
+### Key Advantage:
+No virtual machines, no web server configuration; just scalable, serverless hosting.
+
+---
+
 ## 🚀 Deployment Steps
 
 ### 1. Create a Storage Account
@@ -195,11 +204,11 @@ _**Successfully deleted the resource group that contains the storage account to 
 
 ---
 
-## ✅ Outcome
-
-* Successfully deployed a fully functional static website
-* Demonstrated ability to manage cloud storage and hosting
-* Gained hands-on experience with real-world Azure workflows
+## ✅ Project Outcome
+  
+* Successfully deployed a publicly accessible static website using Azure-native services
+* Demonstrated serverless web hosting without managing infrastructure
+* Showcased ability to configure and manage cloud storage for real-world use cases
 
 ---
 
@@ -210,6 +219,16 @@ _**Successfully deleted the resource group that contains the storage account to 
 * Azure Blob Storage provides a cost-effective hosting solution
 * Real-time updates are simple with file replacement
 * Resource cleanup is essential in cloud environments
+
+---
+
+## 🔐 Real-World Relevance
+
+This project reflects real-world responsibilities such as:
+
+* Hosting lightweight websites for businesses
+* Managing cloud storage and public access
+* Supporting web-based applications in cloud environments
 
 ---
 
@@ -228,3 +247,6 @@ Aspiring IT Support / Cloud Engineer
 
 ---
 
+## ⭐ Final Note
+
+This project demonstrates practical cloud skills aligned with real-world IT and cloud support roles, showcasing the ability to deploy scalable, cost-effective solutions using **Microsoft Azure**.
