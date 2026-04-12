@@ -274,6 +274,6 @@ Including:
 
 Aspiring IT Support / Cloud Engineer
 
-## ⭐ Final Recruiter Note
+## ⭐ Final Note
 
 This project demonstrates hands-on experience with Azure governance, resource protection, and operational control using Microsoft Azure, showcasing practical skills required for real-world IT and cloud support roles.
