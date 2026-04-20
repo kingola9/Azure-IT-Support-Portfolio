@@ -104,4 +104,4 @@ Checked VM runtime states:
 * IT Support & Problem Solving
 
 ####  🎥Video Demonstration of how i successfully deployed a Linux VM🔗:
-#### ARM Template (JSON file): https://github.com/kingola9/Azure-IT-Support-Portfolio/blob/d6a6b15ef0a51fbd976661008dda731149173094/template.json
+#### [ARM Template (JSON file)](https://github.com/kingola9/Azure-IT-Support-Portfolio/tree/8458c122e39d46c25c0636af285d20868e30bae5/PROJECT%20%231%20ARM%20Template)
