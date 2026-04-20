@@ -253,31 +253,36 @@ Used to deploy identical servers across environments (e.g., production, staging)
 Image name
 4. Confirm and create 
 
-![Screenshot (160)~2](https://github.com/user-attachments/assets/1ab43416-e248-4509-994e-102495500119)
+
+<img width="auto" height="auto" alt="Screenshot (14)-1" src="https://github.com/user-attachments/assets/9c89bd7c-9034-480e-9b5b-2175513c1189" />
 
 _Click on Capture at the VM overview page at the top to create your image_
 
 ---
 
-<img width="auto" height="auto" alt="Screenshot (85)" src="https://github.com/user-attachments/assets/cb96b71a-e379-422d-93b3-4df59ac7bada" />
+
+<img width="auto" height="auto" alt="533667291-cb96b71a-e379-422d-93b3-4df59ac7bada~2" src="https://github.com/user-attachments/assets/c05ca536-a625-4f5c-b159-591ed73004b1" />
 
 _Clicked on managed disk and also clicked on automatically delete original VM_
 
 ---
 
-<img width="auto" height="auto" alt="Screenshot (88)" src="https://github.com/user-attachments/assets/e6a7025b-65f8-44ea-a715-40ecc68d6cfd" />
+
+<img width="auto" height="auto" alt="533661868-e6a7025b-65f8-44ea-a715-40ecc68d6cfd~2" src="https://github.com/user-attachments/assets/df4c279c-6431-40bc-b731-9bfddd3875a5" />
 
 _Confirm and Create image (named: My-VM-Ubuntu-Custom-Image-20260101053248), then wait for deployment_
 
 ---
 
-![Screenshot_20260106-172405~2](https://github.com/user-attachments/assets/aaaf46b9-50a8-4b3f-8ac6-fe5f1d543355)
+
+<img width="auto" height="auto" alt="533661841-aaaf46b9-50a8-4b3f-8ac6-fe5f1d543355~2" src="https://github.com/user-attachments/assets/e0addd2c-464f-4a38-b6ca-5ed548a89940" />
 
 _Successfully deployed the captured imaged while automatically deleted the VM overview_
 
 ---
 
-![Screenshot_20260106-172617~3](https://github.com/user-attachments/assets/934317f9-a92a-4e1f-a189-58d7784708d3)
+<img width="auto" height="auto" alt="533642030-d1f7a003-7d10-47f2-b9ca-0ec89f773c96~4" src="https://github.com/user-attachments/assets/ee701eb6-aff2-49d5-8a26-ecdaeb0056d0" />
+
 
 _Custom Captured image (overview)_
 
@@ -315,7 +320,8 @@ Higher risk of inconsistency and errors
 3. Review the generated ARM template
 4. Download the template and parameters file
 
-<img width="auto" height="auto" alt="Screenshot (100)" src="https://github.com/user-attachments/assets/553f67dc-f5e2-4a5c-a35c-d4257b1a05c6" />
+
+<img width="auto" height="auto" alt="533670671-553f67dc-f5e2-4a5c-a35c-d4257b1a05c6~3" src="https://github.com/user-attachments/assets/6c6c5d28-fb86-407f-87d3-d159d4e640a7" />
 
 _Exported template and downloaded it._
 
