@@ -133,3 +133,74 @@ Validation: Invoke URL generated
 
 Why this matters:
 Transforms local code into a live cloud service.
+
+
+
+
+
+3. Test Endpoint & Validate Accessibility
+🔹 Test Public Endpoint
+Opened endpoint in browser
+Verified response (Hello World)
+Tested in incognito mode
+
+Validation: Works without authentication
+
+Why this matters:
+Confirms availability and public access.
+
+🔹 Verify in Azure Portal
+Confirmed GetStatus function exists in Function App
+
+Why this matters:
+Ensures successful deployment and visibility.
+
+4. Enable Monitoring, Secure Access & Review Logs
+🔹 Enable Monitoring
+Enabled Azure Application Insights
+Configured Log Analytics workspace
+
+Why this matters:
+Provides performance tracking and diagnostics.
+
+🔹 Restrict Access (Security)
+Updated authorization level:
+sed -i "s/authLevel: 'anonymous'/authLevel: 'function'/" src/functions/GetStatus.js
+Redeployed function:
+func azure functionapp publish $FUNC_APP_NAME
+
+Why this matters:
+Secures endpoint using function-level authentication.
+
+🔹 Test Secured Endpoint
+Access without key → 401 Unauthorized
+Retrieved function key
+Access with key:
+https://<function-app>/api/getstatus?code=<function-key>
+
+Validation:
+
+Fails without key
+Works with key
+
+Why this matters:
+Demonstrates basic API protection.
+
+🔹 Review Invocation Logs
+Accessed Invocations tab
+Verified logs (status, duration, timestamp)
+
+Key Insight:
+
+Successful calls logged
+Unauthorized requests not logged
+
+Why this matters:
+Shows ability to monitor and troubleshoot live systems.
+
+5. Clean Up Resources
+Deleted resource group
+Removed monitoring resources
+
+Why this matters:
+Prevents unnecessary cloud costs.
