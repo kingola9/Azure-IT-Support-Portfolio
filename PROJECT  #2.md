@@ -1,4 +1,5 @@
 ## ☁️ PROJECT 2: Standardizing VM Deployments Using Azure Custom Images & ARM Templates
+
 ### 🔍 Real-World Scenario
 
 In enterprise environments, deploying virtual machines manually often leads to configuration inconsistencies, slower provisioning, and increased risk during system recovery.
@@ -120,26 +121,30 @@ _Azure resource flow showing VM ➡️ Image ➡️ Vnet_
 All future VMs created from this image will inherit misconfigurations.
 
 
-![Screenshot (160)~2](https://github.com/user-attachments/assets/008b998e-e58b-4bf3-b2da-84f429351551)
+<img width="auto" height="auto" alt="Screenshot (14)-1" src="https://github.com/user-attachments/assets/9c89bd7c-9034-480e-9b5b-2175513c1189" />
 
 _Created and configured the VM (Running) which shows the OS details (Linux//Ubuntu)_
 
 ---
 
-![Screenshot_20260105-120144](https://github.com/user-attachments/assets/d7620d0f-018a-43cf-873d-19adcabd0afc)
 
-_Connecting through SSH Azure CLI_
+<img width="auto" height="auto" alt="532480287-d7620d0f-018a-43cf-873d-19adcabd0afc~2" src="https://github.com/user-attachments/assets/78846ba9-1adb-4ec5-96b4-7036b185c4ca" />
+
+_Connecting through SSH using Azure CLI_
 
 ---
 
-![Screenshot_20260105-120508](https://github.com/user-attachments/assets/acb84045-d0e8-4e72-9f0b-b341c2bce9d4)
 
-_Connected successfully on Azure CLI (SSH)_ 
+<img width="auto" height="auto" alt="532480785-acb84045-d0e8-4e72-9f0b-b341c2bce9d4~2" src="https://github.com/user-attachments/assets/3a8ce376-47af-4f90-936f-a324598c3507" />
+
+_Connected successfully to the VM on Azure CLI (My username and name of VM which is: `azureuser@my_vm` is an indicator)_ 
 
 
 ---
 
 ### 🔹 Step 2: Generalize the VM
+
+**Run:**
 
 ```bash
 sudo waagent -deprovision+user
@@ -165,7 +170,10 @@ Removed machine-specific data from the VM
 * Deployment failures when reusing image
 
 
-<img width="auto" height="auto" alt="Screenshot (184)" src="https://github.com/user-attachments/assets/46dded37-e46f-4ce3-bd4c-ff80c096f154" />
+
+
+
+<img width="auto" height="auto" alt="533643945-46dded37-e46f-4ce3-bd4c-ff80c096f154~2" src="https://github.com/user-attachments/assets/14a865fb-b1ec-4f49-93b9-f73edc0a21be" />
 
  _Then enter y command_
 
@@ -176,9 +184,10 @@ Then:
 exit 
 ```
 
-<img width="auto" height="auto" alt="Screenshot (185)" src="https://github.com/user-attachments/assets/866c436d-a49a-49c6-867e-48026061e198" />
 
-_Azure CLI (overview)_
+<img width="auto" height="auto" alt="533643933-866c436d-a49a-49c6-867e-48026061e198~2" src="https://github.com/user-attachments/assets/3ce50273-7452-4179-ab28-a3e23cfd668d" />
+
+_Azure CLI Overview indicating the exit of the VM_
 
 
 #### Pro Tip: In the case where the terminal don't display the confirmation of the generalization of the VM, it's crucial to login again after exit to confirm.
@@ -187,7 +196,8 @@ After entering your username and password or SSH key to login again and the term
 This error simply it indicates that your VM has been generalized just as below:
 
 
-<img width="auto" height="auto" alt="Screenshot (191)" src="https://github.com/user-attachments/assets/85b2b219-a63f-4b0a-9f2a-c076f75964d2" />
+
+<img width="auto" height="auto" alt="533657346-85b2b219-a63f-4b0a-9f2a-c076f75964d2~2" src="https://github.com/user-attachments/assets/a99df36e-f764-4a28-b626-aee355ff73f3" />
 
 _The error message above simply indicates that our VM has been generalized for capturing_
 
@@ -222,7 +232,8 @@ Click Stop → ensure status shows Deallocated
 
 ---
 
-![Screenshot (187)~2](https://github.com/user-attachments/assets/85478aec-340f-49f7-b3cc-803594eaf432)
+
+<img width="auto" height="auto" alt="533659451-85478aec-340f-49f7-b3cc-803594eaf432~2" src="https://github.com/user-attachments/assets/900b3d84-03d5-4217-aa2e-29b701213577" />
 
 _VM status showing Stopped (Deallocated) in Azure Portal_
 
@@ -376,6 +387,7 @@ This solution enables:
 * 🚑 Faster recovery during system failures
 * 📦 Scalable and reusable deployments
 
+---
 
   ### 🔐 Best Practices Applied
 * Always generalize before capturing images
@@ -396,7 +408,9 @@ This solution enables:
 * Supports scalable infrastructure deployment
 * Enhances consistency across environments
 * Simplifies troubleshooting and maintenance
-  
+
+---
+
 ### 📈 Key Takeaways
 * Standardization is critical in cloud environments
 * Small mistakes (e.g., skipping deallocation) can break workflows
