@@ -286,7 +286,9 @@ _Custom Captured image (overview)_
 
 **What was done:**
 
-Exported infrastructure as JSON template
+Exported infrastructure as JSON template:
+#### [ARM Template link](https://github.com/kingola9/Azure-IT-Support-Portfolio/tree/8458c122e39d46c25c0636af285d20868e30bae5/PROJECT%20%232%20ARM%20Template)
+
 
 **🔍 Why this matters:**
 
@@ -314,7 +316,7 @@ _Exported template and downloaded it._
 
 🎉 The template can now be reused to redeploy infrastructure when needed.
 
-#### ARM Template link : https://github.com/kingola9/Azure-IT-Support-Portfolio/blob/74e209659ab28850caac58a080c3eb5442ce1dd1/template-1.json
+#### [ARM Template link](https://github.com/kingola9/Azure-IT-Support-Portfolio/tree/8458c122e39d46c25c0636af285d20868e30bae5/PROJECT%20%232%20ARM%20Template)
 
 ---
 
