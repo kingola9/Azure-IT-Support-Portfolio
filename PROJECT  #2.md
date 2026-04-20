@@ -59,13 +59,19 @@ Future Consistent Deployments
 ```
 
 
-![Screenshot (160)~2](https://github.com/user-attachments/assets/008b998e-e58b-4bf3-b2da-84f429351551)
+<img width="auto" height="auto" alt="Screenshot (14)-1" src="https://github.com/user-attachments/assets/9c89bd7c-9034-480e-9b5b-2175513c1189" />
+
 _VM overview (running)_
 
-![Screenshot_20260106-172617~3](https://github.com/user-attachments/assets/d1f7a003-7d10-47f2-b9ca-0ec89f773c96)
+
+
+<img width="auto" height="auto" alt="533642030-d1f7a003-7d10-47f2-b9ca-0ec89f773c96~4" src="https://github.com/user-attachments/assets/ee701eb6-aff2-49d5-8a26-ecdaeb0056d0" />
+
 _Captured custom image (overview)_
 
-![Screenshot (95)~2](https://github.com/user-attachments/assets/fd680136-4c13-4668-91c3-ca6252b97cd8)
+
+<img width="auto" height="auto" alt="Screenshot (309)" src="https://github.com/user-attachments/assets/e021e441-3972-4b41-83e0-0a6d201e5027" />
+
 _Azure resource flow showing VM ➡️ Image ➡️ Vnet_
 
 
