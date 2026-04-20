@@ -82,7 +82,25 @@ This architecture eliminates the need for:
 
 **Why this matters:**
 
-Ensures auto-scaling and cost efficiency.
+* Ensures auto-scaling and cost efficiency.
+
+<img width="auto" height="auto" alt="Screenshot (373)" src="https://github.com/user-attachments/assets/e46869eb-38d9-45a8-a981-3bac23ccc81f" />
+
+_**Creation of Function App Setup**__
+
+
+----
+
+
+<img width="auto" height="auto" alt="Screenshot (374)" src="https://github.com/user-attachments/assets/c9799a5c-1a2c-4ddc-bff2-ad2eefce09bb" />
+
+_**Function App Deployment in Progress**_
+
+---
+
+<img width="auto" height="auto" alt="Screenshot (375)" src="https://github.com/user-attachments/assets/f5600a55-b9f0-450d-ac58-dfc21c55ab79" />
+
+_**Function App Deployment successful & Overview**_
 
 ---
 
@@ -107,6 +125,13 @@ Ensures auto-scaling and cost efficiency.
 ```
 mkdir func-gp-endpoint && cd func-gp-endpoint
 ```
+
+<img width="auto" height="auto" alt="Screenshot (376)" src="https://github.com/user-attachments/assets/bf9e1260-968e-43a6-93a9-66490ddfad5d" />
+
+_**Created a project folder**_
+
+---
+
 * **Initialized project:**
 
 ```
@@ -114,15 +139,32 @@ func init --worker-runtime node --language javascript --model V4
 
 ```
 
+<img width="auto" height="auto" alt="Screenshot (377)" src="https://github.com/user-attachments/assets/7fe8550b-8b86-4653-a846-a00f975908f7" />
+
+_**Initialized project**_
+
+---
+
+
 * **Created HTTP trigger:**
 ```
 func new --name GetStatus --template "HTTP trigger" --authlevel anonymous
 ````
 
+<img width="auto" height="auto" alt="Screenshot (379)" src="https://github.com/user-attachments/assets/3fc0e319-154e-4054-81f7-3e43346d6e7a" />
+
+_**Created a HTTP trigger**_
+
+---
+
 * **Verified file creation:**
 ```
 ls src/functions/
 ```
+
+<img width="auto" height="auto" alt="Screenshot (380)" src="https://github.com/user-attachments/assets/c89823cb-f4af-499c-b78b-43c4f41088ed" />
+
+_**Verified file creation**_
 
 **Validation:** `GetStatus.js` exists
 
@@ -139,15 +181,32 @@ ls src/functions/
 FUNC_APP_NAME=$(az functionapp list --resource-group rg-gp-functions-endpoint --query "[0].name" -o tsv)
 ```
 
+<img width="auto" height="auto" alt="Screenshot (381)" src="https://github.com/user-attachments/assets/2ba34a77-578d-4d28-b346-d334549e4e33" />
+
+_**Retrieved Function App name**_
+
+---
+
 * **Published function:**
 ```
 func azure functionapp publish $FUNC_APP_NAME
 ```
 
+<img width="auto" height="auto" alt="Screenshot (382)" src="https://github.com/user-attachments/assets/c473e891-f736-4a63-a4ab-b22bac567c68" />
+
+_**Published Function (Deployment in Progress)**_
+
+---
+
 * **Obtained public endpoint:**
 ```
 https://func-gp-endpoint-ola-g6e8fddhfbd7bchy.francecentral-01.azurewebsites.net/api/getstatus
 ````
+
+<img width="auto" height="auto" alt="Screenshot (394)" src="https://github.com/user-attachments/assets/998a12fb-35b8-4163-bcf8-e67fdae04beb" />
+
+_**Function Deployment successful (Obtained public endpoint)**_
+
 
 **Validation:** [Invoke URL](https://func-gp-endpoint-ola-g6e8fddhfbd7bchy.francecentral-01.azurewebsites.net/api/getstatus) generated
 
