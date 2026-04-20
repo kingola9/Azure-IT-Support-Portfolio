@@ -22,7 +22,7 @@ I specialize in supporting Linux-based virtual machines, resolving real-world de
 
 
 ## 🚀 Featured Projects
- 🔹 [Azure Virtual Machine Deployment & Troubleshooting](https://github.com/kingola9/Azure-IT-Support-Portfolio/blob/62f791f3a15ab6dd72012dba6c0fa2656ea2b7ef/PROJECT%20%231.md)
+ 🔹 [Azure Virtual Machine Deployment & Troubleshooting](https://github.com/kingola9/Azure-IT-Support-Portfolio/blob/ff902e962c226a7236f0fa3362c5d46c2889431e/PROJECT%20%231.md)
 
 **Problem:** VM deployment and SSH access failures in a cloud environment
 
