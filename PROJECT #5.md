@@ -394,7 +394,7 @@ _**Deleted the Log Analytics workspace**_
  
  ```JSON
 {
-  "message": "Hello,world!"
+  "message": "Hello, world!"
 }
 
 ```
@@ -446,7 +446,7 @@ _**Deleted the Log Analytics workspace**_
 
 ---
 
-### 🔗 Project Value to Employers
+### 🔗 Project Value
 
 This project proves the ability to:
 
@@ -467,8 +467,12 @@ This project proves the ability to:
 
 ---
 
-### Author
+### 📬 Author
 
 **Abeeb Olabode**
 
-Aspiring IT Support / Cloud Professional
+Aspiring Cloud / IT Support Professional
+
+--- 
+
+⭐ If you found this project helpful, feel free to star the repository!
