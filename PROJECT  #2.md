@@ -1,77 +1,62 @@
-### PROJECT 2 : Creation of Custom Image through Generalization of VM and Exporting of Template
+## ☁️ PROJECT 2: Standardizing VM Deployments Using Azure Custom Images & ARM Templates
+### 🔍 Real-World Scenario
+
+In enterprise environments, deploying virtual machines manually often leads to configuration inconsistencies, slower provisioning, and increased risk during system recovery.
+
+This project simulates how an IT Support / Cloud Support professional can:
+
+* Standardize VM deployments
+* Reduce configuration errors
+* Enable faster recovery during incidents
+
+by creating a reusable Azure Custom Image and exporting an ARM template for consistent redeployment.
+
+---
 
 ### 📌 Project Overview
 
-This project demonstrates hands-on experience creating a reusable Azure Custom Image by generalizing a Virtual Machine (VM) and exporting the deployment template for future redeployment.
+This project demonstrates the process of:
 
-The focus is on VM generalization, image creation, and template export only — not full redeployment — to show how standardized infrastructure can be prepared for reuse and disaster recovery.
+* Generalizing an Azure Virtual Machine (VM)
+* Capturing it as a reusable Custom Image
+* Exporting the infrastructure as an ARM template
 
+The focus is on preparing production-ready, reusable infrastructure, which is critical for:
 
----
+* Disaster recovery
+* Rapid provisioning
+* Environment consistency
 
-### 🧠 Skills Demonstrated
+----
 
-- Microsoft Azure Virtual Machines
+### 🎯 Project Objectives
 
-- VM Generalization (Linux & Windows)
-
-- Azure Custom Images
-
-- Managed Disks
-
-- Resource Group Management
-
-- Exporting ARM Templates
-
-- Azure Portal & Azure CLI
-
-- Infrastructure Documentation
+* Deploy and configure an Azure Virtual Machine
+* Remove machine-specific data via generalization
+* Capture the VM as a reusable custom image
+* Export infrastructure as an ARM template
+* Validate readiness for future redeployment
 
 
 ---
 
-### 🛠 Environment & Tools
 
-- Cloud Platform: Microsoft Azure
+## 🧱 Architecture Flow
 
-- VM OS: Ubuntu Linux / Windows Server (generalizable)
+```
+Configured VM 
+   ↓
+Generalization (Deprovision)
+   ↓
+Deallocated VM
+   ↓
+Custom Image (Reusable)
+   ↓
+ARM Template Export
+   ↓
+Future Consistent Deployments
 
-- Image Type: Managed Image
-
-- Deployment Method: Azure Portal & ARM-compatible image
-
-
----
-
-### 🎯 Project Objective
-
-**💡Create and configure an Azure Virtual Machine**
-
-**💡Generalize the VM to remove machine-specific data**
-
-**💡Capture the VM as a Custom Image**
-
-**💡Export the VM deployment template for reuse**
-
-
-
----
-
-### 🧩 Architecture Flow
-
-1. Create & configure Azure VM
-
-
-2. Deprovision / Generalize the VM
-
-
-3. Stop (Deallocate) the VM
-
-
-4. Capture VM as Custom Image
-
-
-5. Export ARM template
+```
 
 
 ![Screenshot (160)~2](https://github.com/user-attachments/assets/008b998e-e58b-4bf3-b2da-84f429351551)
@@ -86,50 +71,99 @@ _Azure resource flow showing VM ➡️ Image ➡️ Vnet_
 
 ---
 
-### 🚀 Step-by-Step Implementation
+### 🛠 Environment & Tools
 
-### Step 1: Create and Configure the VM
+* Cloud Platform: Microsoft Azure
+* VM OS: Ubuntu Linux / Windows Server
+* Image Type: Managed Image
+* Tools: Azure Portal, Azure CLI, SSH
+* Infrastructure Format: ARM Template
 
-Create a Virtual Machine in Azure
+---
 
-Install updates and required software
+### 🧠 Skills Demonstrated
 
-Confirm VM boots and runs correctly
+* Azure VM Lifecycle Management
+* VM Generalization (Linux & Windows awareness)
+* Custom Image Creation
+* Infrastructure Standardization
+* ARM Template Export & Review
+* Troubleshooting Deployment Failures
+* Documentation & Reproducibility
 
 
-📸 Screenshots to add:
+---
+
+
+### 🚀 Implementation Breakdown (With Technical Reasoning)
+### 🔹 Step 1: Create and Configure VM
+
+**What was done:**
+
+* Deployed a Linux VM in Azure
+* Installed updates and required configurations
+* Verified access via SSH
+
+**🔍 Why this matters:**
+
+* The VM becomes the baseline image state
+* All installed software and configurations are preserved in the final image
+* Ensures future deployments are pre-configured and consistent
+
+**💥 If done poorly:**
+All future VMs created from this image will inherit misconfigurations.
 
 
 ![Screenshot (160)~2](https://github.com/user-attachments/assets/008b998e-e58b-4bf3-b2da-84f429351551)
 
 _Created and configured the VM (Running) which shows the OS details (Linux//Ubuntu)_
 
+---
+
 ![Screenshot_20260105-120144](https://github.com/user-attachments/assets/d7620d0f-018a-43cf-873d-19adcabd0afc)
 
 _Connecting through SSH Azure CLI_
+
+---
 
 ![Screenshot_20260105-120508](https://github.com/user-attachments/assets/acb84045-d0e8-4e72-9f0b-b341c2bce9d4)
 
 _Connected successfully on Azure CLI (SSH)_ 
 
 
-
-
 ---
 
-### Step 2: Generalize the VM
-
-🔹 For Linux VM (Ubuntu)
-
-Connect via SSH and run:
+### 🔹 Step 2: Generalize the VM
 
 ```bash
 sudo waagent -deprovision+user
+
 ```
+
+**What was done:**
+
+Removed machine-specific data from the VM
+
+**🔍 Why this matters:**
+
+**Eliminates:**
+* User accounts
+* SSH keys/username & password
+* System identifiers
+* Converts VM into a template-ready state
+
+**💥 What breaks if skipped:**
+
+* Duplicate machine identities
+* Security risks
+* Deployment failures when reusing image
+
 
 <img width="auto" height="auto" alt="Screenshot (184)" src="https://github.com/user-attachments/assets/46dded37-e46f-4ce3-bd4c-ff80c096f154" />
 
  _Then enter y command_
+
+---
 
 Then:
 ```bash
@@ -140,95 +174,138 @@ exit
 
 _Azure CLI (overview)_
 
+
 #### Pro Tip: In the case where the terminal don't display the confirmation of the generalization of the VM, it's crucial to login again after exit to confirm.
 After entering your username and password or SSH key to login again and the terminal display:
  _permission denied, try again later._
 This error simply it indicates that your VM has been generalized just as below:
 
+
 <img width="auto" height="auto" alt="Screenshot (191)" src="https://github.com/user-attachments/assets/85b2b219-a63f-4b0a-9f2a-c076f75964d2" />
 
 _The error message above simply indicates that our VM has been generalized for capturing_
 
+**💡 Real Insight:**
+The “permission denied” error after exit confirms successful generalization.
 
 ---
 
-### Step 3: Stop (Deallocate) the VM
 
-From Azure Portal:
+### 🔹 Step 3: Deallocate the VM
+
+**What was done:**
+
+* Stopped the VM and ensured status = Deallocated
+
+**🔍 Why this matters:**
+
+* Releases compute resources
+* Ensures disk is in a stable, consistent state
+* Required by Azure for successful image capture
+
+**💥 What breaks if skipped:**
+
+* Image capture fails
+* Risk of incomplete or corrupted image
+
+**From Azure Portal:**
 
 Navigate to the VM
 
 Click Stop → ensure status shows Deallocated
 
+---
+
 ![Screenshot (187)~2](https://github.com/user-attachments/assets/85478aec-340f-49f7-b3cc-803594eaf432)
 
 _VM status showing Stopped (Deallocated) in Azure Portal_
 
-
 > ⚠️ Skipping this step will cause image capture to fail.
-
-
 
 ---
 
-### Step 4: Create the Custom Image
+### 🔹 Step 4: Capture Custom Image
+
+**What was done:**
+
+Captured VM as a Managed Image
+
+**🔍 Why this matters:**
+
+Creates a reusable blueprint of the system
+Enables:
+* Rapid scaling
+* Consistent deployments
+* Reduced manual configuration
+
+**💡 Real-world use case:**
+Used to deploy identical servers across environments (e.g., production, staging)
 
 1. Go to the VM → Capture
-
-
 2. Select Image type: Managed image
-
-
 3. Provide:
-
 Image name
-
 4. Confirm and create 
 
 ![Screenshot (160)~2](https://github.com/user-attachments/assets/1ab43416-e248-4509-994e-102495500119)
 
 _Click on Capture at the VM overview page at the top to create your image_
 
+---
 
 <img width="auto" height="auto" alt="Screenshot (85)" src="https://github.com/user-attachments/assets/cb96b71a-e379-422d-93b3-4df59ac7bada" />
 
-
 _Clicked on managed disk and also clicked on automatically delete original VM_
+
+---
 
 <img width="auto" height="auto" alt="Screenshot (88)" src="https://github.com/user-attachments/assets/e6a7025b-65f8-44ea-a715-40ecc68d6cfd" />
 
 _Confirm and Create image (named: My-VM-Ubuntu-Custom-Image-20260101053248), then wait for deployment_
 
+---
 
 ![Screenshot_20260106-172405~2](https://github.com/user-attachments/assets/aaaf46b9-50a8-4b3f-8ac6-fe5f1d543355)
 
 _Successfully deployed the captured imaged while automatically deleted the VM overview_
+
+---
 
 ![Screenshot_20260106-172617~3](https://github.com/user-attachments/assets/934317f9-a92a-4e1f-a189-58d7784708d3)
 
 _Custom Captured image (overview)_
 
 
-Resource group (recommended: separate group for Custom Images)
-
 ✅ The VM is automatically deleted after capture (if selected).
 
 
 ---
 
-### Step 5: Export the Deployment Template
+
+### 🔹 Step 5: Export ARM Template
+
+**What was done:**
+
+Exported infrastructure as JSON template
+
+**🔍 Why this matters:**
+
+Enables Infrastructure as Code (IaC)
+Allows:
+* Automated deployments
+* Version control
+* Reproducibility
+
+**💥 Without this:**
+
+Infrastructure must be recreated manually
+Higher risk of inconsistency and errors
+
 
 1. Navigate to the Resource Group containing the VM or Image
-
-
 2. Select Export template
-
-
 3. Review the generated ARM template
-
-
 4. Download the template and parameters file
-
 
 <img width="auto" height="auto" alt="Screenshot (100)" src="https://github.com/user-attachments/assets/553f67dc-f5e2-4a5c-a35c-d4257b1a05c6" />
 
@@ -237,145 +314,128 @@ _Exported template and downloaded it._
 
 🎉 The template can now be reused to redeploy infrastructure when needed.
 
-#### ARM Template : https://github.com/kingola9/Azure-IT-Support-Portfolio/blob/74e209659ab28850caac58a080c3eb5442ce1dd1/template-1.json
+#### ARM Template link : https://github.com/kingola9/Azure-IT-Support-Portfolio/blob/74e209659ab28850caac58a080c3eb5442ce1dd1/template-1.json
 
 ---
 
-### 🧪 Validation & Validation
 
-Confirm custom image is successfully created
-
-Verify VM shows Generalized state before capture
-
-Confirm template file downloads successfully
-
-Review template for required parameters
-
-
-📸 Screenshots to add:
-
-Custom Image listed under Images
-
-Exported template files on local machine
-
-
+### 🧪 Validation (What Was Verified & Why)
+* ✅ VM confirmed in Generalized state → ensures safe cloning
+* ✅ Custom image successfully created → validates capture process
+* ✅ ARM template exported → confirms infrastructure portability
+* ✅ Template reviewed → ensures correct configuration
 
 ---
 
-#### ❗ Common Issues & Fixes
+### 🚨 Issues Encountered & Resolutions
 
-#### OS Profile Error
+**❌ OS Profile Error**
 
-#### Cause: 
+**Cause:** VM not generalized
 
-VM was not generalized before capture
+✅ **Fix:**
 
-#### Fix:
+* Recreated VM
+* Ran deprovision command
+* Re-captured image
 
-Recreate VM
+  
+**❌ OS Disk / Managed Disk Error**
 
-Run waagent -deprovision+user (Linux) or Sysprep (Windows)
+**Cause:** Incorrect disk references or deleted dependencies
 
-Capture again
+✅ **Fix:**
 
-
+* Ensured managed disk usage
+* Maintained correct resource dependencies
+* Avoid deleting image resource group
 
 ---
 
-#### OS Disk / Managed Disk Error
+### 📊 Impact & Business Value
 
-#### Cause: 
+This solution enables:
 
-Disk was referenced incorrectly or deleted
-
-#### Fix:
-
-Ensure disk exists
-
-Use Managed Image, not unmanaged disk
-
-Avoid deleting image resource group
+* ⚡ Faster provisioning using pre-configured images
+* 🔁 Consistent infrastructure across environments
+* 🛡 Reduced configuration errors
+* 🚑 Faster recovery during system failures
+* 📦 Scalable and reusable deployments
 
 
+  ### 🔐 Best Practices Applied
+* Always generalize before capturing images
+* Use dedicated resource groups for images
+* Avoid hard-coded values in templates
+* Validate VM state before capture
+* Document all processes for reproducibility
+
+---
+
+### 💼 IT Support & Cloud Relevance
+**🧑‍💻 IT Support Perspective**
+* Enables rapid system recovery
+* Reduces recurring configuration issues
+* Improves incident response efficiency
+
+**☁️ Cloud Support Perspective**
+* Supports scalable infrastructure deployment
+* Enhances consistency across environments
+* Simplifies troubleshooting and maintenance
+  
+### 📈 Key Takeaways
+* Standardization is critical in cloud environments
+* Small mistakes (e.g., skipping deallocation) can break workflows
+* Troubleshooting requires both system-level and cloud-level understanding
+* Documentation is essential for repeatability and collaboration
 
 ---
 
 ### 🔐 Best Practices Learned
 
-Always generalize before capturing
-
-Store custom images in a dedicated resource group
-
-Avoid hard-coded resource IDs
-
-Use images for consistency and faster deployments
-
-Document steps for reproducibility
-
-
-
----
-
-📸 Screenshots & Evidence (Add Your Proof)
-
-VM running before generalization
-
-Deprovision command / Sysprep screen
-
-Image creation success
-
-New VM deployed from image
-
-
-> Screenshots can be found in the /screenshots folder.
-
-
-
+* Always generalize before capturing
+* Store custom images in a dedicated resource group
+* Avoid hard-coded resource IDs
+* Use images for consistency and faster deployments
+* Document steps for reproducibility
 
 ---
 
 ### 💼 Portfolio Value
 
-This project demonstrates:
+* This project demonstrates:
+* Azure VM lifecycle management
+* Image-based standardization
+* Template-based infrastructure portability
+* Preparation for disaster recovery and redeployment
 
-Azure VM lifecycle management
-
-Image-based standardization
-
-Template-based infrastructure portability
-
-Preparation for disaster recovery and redeployment
-
+---
 
 ### Ideal for showcasing:
 
-IT Support Engineer
+✅ IT Support Engineer
 
-Cloud Support Associate
+✅ Cloud Support Associate
 
-Junior Cloud Engineer roles
-
-
+✅ Junior Cloud Engineer roles
 
 ---
 
 ### 🔗 How to Use This Project
 
-Fork or clone this repository
+✅ Fork or clone this repository
 
-Follow the steps to recreate the process
+✅ Follow the steps to recreate the process
 
-Modify the VM configuration to suit your needs
-
+✅ Modify the VM configuration to suit your needs
 
 
 ---
 
 ### 📬 Author
 
-### Abeeb Olabode 
-
-### Aspiring Cloud / IT Support Professional
+#### Abeeb Olabode 
+Aspiring Cloud / IT Support Professional
 
 
 ---
