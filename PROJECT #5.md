@@ -60,6 +60,8 @@ This transforms a simple “Hello World” function into a practical cloud suppo
 * Node.js (JavaScript runtime)
 * Azure Functions Core Tools
 
+---
+
 ### 🏗️ Architecture Overview
 
 ```
@@ -86,7 +88,7 @@ This architecture eliminates the need for:
 
 <img width="auto" height="auto" alt="Screenshot (373)" src="https://github.com/user-attachments/assets/e46869eb-38d9-45a8-a981-3bac23ccc81f" />
 
-_**Creation of Function App Setup**__
+_**Creation of Function App Setup**_
 
 
 ----
@@ -173,7 +175,9 @@ _**Verified file creation**_
 * HTTP trigger enables **API functionality**
 * Anonymous access simplifies **initial testing**
 * CLI workflow reflects **real-world DevOps practices**
-  
+
+---
+
 **🔹 Task 3:** **Deploy Function to Azure**
 
 * **Retrieved Function App name:**
@@ -222,8 +226,21 @@ _**Function Deployment successful (Obtained public endpoint)**_
 **🔹 Test Public Endpoint**
 
 * Opened endpoint in browser
-* Verified response (Hello World)
+* Verified response (Hello, world!)
 * Tested in incognito mode
+
+
+<img width="auto" height="auto" alt="Screenshot (385)" src="https://github.com/user-attachments/assets/b9a5a656-a191-45a1-b597-3fd17ccf1a6d" />
+
+_**Verified response in browser**_
+
+---
+
+<img width="auto" height="auto" alt="Screenshot (386)" src="https://github.com/user-attachments/assets/4e0a58e7-b7a7-42b5-8d29-7a383f7990d1" />
+
+_**Tested in incognito mode**_
+
+
 
 **Validation:** Works without authentication
 
@@ -231,9 +248,16 @@ _**Function Deployment successful (Obtained public endpoint)**_
 
 * Confirms availability and public access.
 
+---
+
 **🔹 Verify in Azure Portal**
 
 * Confirmed GetStatus function exists in Function App
+
+<img width="auto" height="auto" alt="Screenshot (387)" src="https://github.com/user-attachments/assets/538305c0-e9c0-44b5-b0f5-8fd4a7492cce" />
+
+_**Verified `GetStatus` function exists in Function App**_
+
 
 **Why this matters:**
 
@@ -247,6 +271,18 @@ _**Function Deployment successful (Obtained public endpoint)**_
 
 * Enabled Azure Application Insights
 * Configured Log Analytics workspace
+
+
+<img width="auto" height="auto" alt="Screenshot (390)" src="https://github.com/user-attachments/assets/cbe2688a-3fc3-4e2e-9531-8cb0cb3bf1c0" />
+
+_**Enabled Application Insights**_
+
+
+---
+
+<img width="auto" height="auto" alt="Screenshot (389)" src="https://github.com/user-attachments/assets/a6b7cd6b-3aa0-4a10-859e-c13d1ea25c02" />
+
+_**Log Analytics**_
 
 **Why this matters:**
 
@@ -262,14 +298,26 @@ _**Function Deployment successful (Obtained public endpoint)**_
 sed -i "s/authLevel: 'anonymous'/authLevel: 'function'/" src/functions/GetStatus.js
 ```
 
+<img width="auto" height="auto" alt="Screenshot (392)" src="https://github.com/user-attachments/assets/21c21fd5-a89a-46f9-b7fd-74644757e68d" />
+
+_**Updated Authorization level**_
+
+---
+
 * **Redeployed function:**
 ```
 func azure functionapp publish $FUNC_APP_NAME
 ```
 
+<img width="auto" height="auto" alt="Screenshot (393)" src="https://github.com/user-attachments/assets/82a1ff54-b2de-4336-b135-f7751d2ec504" />
+
+_**Redeployed Function**_
+
 **Why this matters:**
 
 * Secures endpoint using function-level authentication.
+
+---
 
 **🔹 Test Secured Endpoint**
 
@@ -278,8 +326,14 @@ func azure functionapp publish $FUNC_APP_NAME
 * Access with key:
 
 ```
-https://<function-app>/api/getstatus?code=<function-key>
+https://func-gp-endpoint-ola-g6e8fddhfbd7bchy.francecentral-01.azurewebsites.net/api/getstatus
+
 ```
+
+<img width="auto" height="auto" alt="Screenshot (395)" src="https://github.com/user-attachments/assets/95209376-b93a-433c-83be-1760f33327ae" />
+
+_**Tested endpoint without key**_
+
 
 **Validation:**
 
@@ -290,10 +344,17 @@ https://<function-app>/api/getstatus?code=<function-key>
 
 * Demonstrates basic API protection.
 
+---
+
 **🔹 Review Invocation Logs**
 
 * Accessed Invocations tab
 * Verified logs (status, duration, timestamp)
+
+  <img width="auto" height="auto" alt="Screenshot (396)" src="https://github.com/user-attachments/assets/1593c5f8-5154-488f-a510-d9be2684123f" />
+
+_**Reviewed Invocation Logs**_
+
 
 **Key Insight:**
 
@@ -310,12 +371,22 @@ https://<function-app>/api/getstatus?code=<function-key>
 * Deleted resource group
 * Removed monitoring resources
 
+<img width="auto" height="auto" alt="Screenshot (399)" src="https://github.com/user-attachments/assets/074fe1aa-b856-4a5c-878e-87f2ed9a4853" />
+
+_**Deleted the resource group**_
+
+---
+
+<img width="auto" height="auto" alt="Screenshot (402)" src="https://github.com/user-attachments/assets/a3a8cb32-f3db-4673-85e1-fbaa57768522" />
+
+_**Deleted the Log Analytics workspace**_
+
 **Why this matters:**
 
 * Prevents unnecessary cloud costs.
 
 
-
+---
 
  ### 📊 Sample Output
  
@@ -323,10 +394,12 @@ https://<function-app>/api/getstatus?code=<function-key>
  
  ```JSON
 {
-  "message": "Hello, World."
+  "message": "Hello,world!"
 }
 
 ```
+
+--- 
 
 ### 🛡️ Best Practices Applied & Learned
 
@@ -398,4 +471,4 @@ This project proves the ability to:
 
 **Abeeb Olabode**
 
-IT Support / Cloud Professional
+Aspiring IT Support / Cloud Professional
