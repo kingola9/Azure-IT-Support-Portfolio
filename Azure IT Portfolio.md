@@ -34,7 +34,7 @@ I specialize in supporting Linux-based virtual machines, resolving real-world de
 
 **Outcome:** Successfully restored VM access and documented a repeatable troubleshooting process
 
-🔹 [Custom Image Creation & ARM Template Export](https://github.com/kingola9/Azure-IT-Support-Portfolio/blob/bbfa2c72e4c22fb2907691f202f0aff902505e1a/PROJECT%20%20%232.md)
+🔹 [Standardizing VM Deployments Using Azure Custom Images & ARM Templates](https://github.com/kingola9/Azure-IT-Support-Portfolio/blob/5c2f22a9ecba4b04a182737dee648f9499dc4ccd/PROJECT%20%20%232.md)
 
 **Problem:** Need for faster, consistent VM deployment
 
