@@ -73,7 +73,7 @@ I’m actively seeking IT Support, Help Desk, or Cloud Support roles where I can
 
 #### 🔹 [Project 1: Azure Virtual Machine Deployment & Troubleshooting](https://github.com/kingola9/Azure-IT-Support-Portfolio/blob/62f791f3a15ab6dd72012dba6c0fa2656ea2b7ef/PROJECT%20%231.md)
 
-#### 🔹 [Project 2: Creation of Custom Image through Generalization of VM and Exporting of Template](https://github.com/kingola9/Azure-IT-Support-Portfolio/blob/bbfa2c72e4c22fb2907691f202f0aff902505e1a/PROJECT%20%20%232.md)
+#### 🔹 [Project 2: Standardizing VM Deployments Using Azure Custom Images & ARM Templates](https://github.com/kingola9/Azure-IT-Support-Portfolio/blob/5c2f22a9ecba4b04a182737dee648f9499dc4ccd/PROJECT%20%20%232.md)
 
 #### 🔹 [Project 3: Deploy a Static Website with Azure Blob Storage](https://github.com/kingola9/Azure-IT-Support-Portfolio/blob/392ab2680337fe824a66950f37f2214146b7a035/PROJECT%20%233.md)
 
